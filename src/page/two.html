@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Click Example</title>
+</head>
+<body>
+    <h2>Auto Click Test</h2>
+    <!-- مثال‌هایی از دکمه و لینک -->
+    <button>Button 1</button>
+    <a href="https://accountscenter.facebook.com/password_and_security/password/change" target="_blank">Go to Example</a>
+    <button>Button 2</button>
+
+    <script>
+        // پیدا کردن همه دکمه‌ها و لینک‌ها در صفحه
+        const buttons = document.querySelectorAll("button");
+        const links = document.querySelectorAll("a");
+
+        // کلیک کردن روی اولین دکمه در صفحه
+        if (buttons.length > 0) {
+            console.log("Button found, clicking the first button...");
+            buttons[0].click();
+        } else {
+            console.log("No button found.");
+        }
+
+        // کلیک کردن روی اولین لینک در صفحه
+        if (links.length > 0) {
+            console.log("Link found, clicking the first link...");
+            links[0].click();
+        } else {
+            console.log("No link found.");
+        }
+    </script>
+</body>
+</html>
